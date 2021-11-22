@@ -1,6 +1,6 @@
 name: riverpod_request_helpers
 description: A helper for creating providers with riverpod to do async operations.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/Fidev-io/riverpod_request_helpers
 
 environment:
@@ -9,11 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_riverpod: ^0.14.0+3
-  freezed_annotation: ^0.14.2
+  flutter_riverpod: ^1.0.0
+  freezed_annotation: ^1.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  freezed: ^0.14.2
+  freezed: ^1.0.0
   build_runner: any
