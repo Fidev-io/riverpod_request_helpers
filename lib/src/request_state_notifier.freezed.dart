@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'request_state_notifier.dart';
 
@@ -10,36 +12,7 @@ part of 'request_state_notifier.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$RequestStateTearOff {
-  const _$RequestStateTearOff();
-
-  Idle<T> idle<T>() {
-    return Idle<T>();
-  }
-
-  Loading<T> loading<T>() {
-    return Loading<T>();
-  }
-
-  Success<T> success<T>(T? value) {
-    return Success<T>(
-      value,
-    );
-  }
-
-  Error<T> error<T>(Object error, [StackTrace? stackTrace]) {
-    return Error<T>(
-      error,
-      stackTrace,
-    );
-  }
-}
-
-/// @nodoc
-const $RequestState = _$RequestStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$RequestState<T> {
@@ -49,6 +22,14 @@ mixin _$RequestState<T> {
     required TResult Function() loading,
     required TResult Function(T? value) success,
     required TResult Function(Object error, StackTrace? stackTrace) error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? idle,
+    TResult? Function()? loading,
+    TResult? Function(T? value)? success,
+    TResult? Function(Object error, StackTrace? stackTrace)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,6 +50,14 @@ mixin _$RequestState<T> {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Idle<T> value)? idle,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Idle<T> value)? idle,
     TResult Function(Loading<T> value)? loading,
@@ -83,39 +72,38 @@ mixin _$RequestState<T> {
 abstract class $RequestStateCopyWith<T, $Res> {
   factory $RequestStateCopyWith(
           RequestState<T> value, $Res Function(RequestState<T>) then) =
-      _$RequestStateCopyWithImpl<T, $Res>;
+      _$RequestStateCopyWithImpl<T, $Res, RequestState<T>>;
 }
 
 /// @nodoc
-class _$RequestStateCopyWithImpl<T, $Res>
+class _$RequestStateCopyWithImpl<T, $Res, $Val extends RequestState<T>>
     implements $RequestStateCopyWith<T, $Res> {
   _$RequestStateCopyWithImpl(this._value, this._then);
 
-  final RequestState<T> _value;
   // ignore: unused_field
-  final $Res Function(RequestState<T>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $IdleCopyWith<T, $Res> {
-  factory $IdleCopyWith(Idle<T> value, $Res Function(Idle<T>) then) =
-      _$IdleCopyWithImpl<T, $Res>;
+abstract class _$$IdleCopyWith<T, $Res> {
+  factory _$$IdleCopyWith(_$Idle<T> value, $Res Function(_$Idle<T>) then) =
+      __$$IdleCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class _$IdleCopyWithImpl<T, $Res> extends _$RequestStateCopyWithImpl<T, $Res>
-    implements $IdleCopyWith<T, $Res> {
-  _$IdleCopyWithImpl(Idle<T> _value, $Res Function(Idle<T>) _then)
-      : super(_value, (v) => _then(v as Idle<T>));
-
-  @override
-  Idle<T> get _value => super._value as Idle<T>;
+class __$$IdleCopyWithImpl<T, $Res>
+    extends _$RequestStateCopyWithImpl<T, $Res, _$Idle<T>>
+    implements _$$IdleCopyWith<T, $Res> {
+  __$$IdleCopyWithImpl(_$Idle<T> _value, $Res Function(_$Idle<T>) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Idle<T> implements Idle<T> {
-  const _$Idle();
+class _$Idle<T> extends Idle<T> {
+  const _$Idle() : super._();
 
   @override
   String toString() {
@@ -124,7 +112,8 @@ class _$Idle<T> implements Idle<T> {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Idle<T>);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Idle<T>);
   }
 
   @override
@@ -139,6 +128,17 @@ class _$Idle<T> implements Idle<T> {
     required TResult Function(Object error, StackTrace? stackTrace) error,
   }) {
     return idle();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? idle,
+    TResult? Function()? loading,
+    TResult? Function(T? value)? success,
+    TResult? Function(Object error, StackTrace? stackTrace)? error,
+  }) {
+    return idle?.call();
   }
 
   @override
@@ -169,6 +169,17 @@ class _$Idle<T> implements Idle<T> {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Idle<T> value)? idle,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+  }) {
+    return idle?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Idle<T> value)? idle,
     TResult Function(Loading<T> value)? loading,
@@ -183,30 +194,31 @@ class _$Idle<T> implements Idle<T> {
   }
 }
 
-abstract class Idle<T> implements RequestState<T> {
+abstract class Idle<T> extends RequestState<T> {
   const factory Idle() = _$Idle<T>;
+  const Idle._() : super._();
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<T, $Res> {
-  factory $LoadingCopyWith(Loading<T> value, $Res Function(Loading<T>) then) =
-      _$LoadingCopyWithImpl<T, $Res>;
+abstract class _$$LoadingCopyWith<T, $Res> {
+  factory _$$LoadingCopyWith(
+          _$Loading<T> value, $Res Function(_$Loading<T>) then) =
+      __$$LoadingCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<T, $Res> extends _$RequestStateCopyWithImpl<T, $Res>
-    implements $LoadingCopyWith<T, $Res> {
-  _$LoadingCopyWithImpl(Loading<T> _value, $Res Function(Loading<T>) _then)
-      : super(_value, (v) => _then(v as Loading<T>));
-
-  @override
-  Loading<T> get _value => super._value as Loading<T>;
+class __$$LoadingCopyWithImpl<T, $Res>
+    extends _$RequestStateCopyWithImpl<T, $Res, _$Loading<T>>
+    implements _$$LoadingCopyWith<T, $Res> {
+  __$$LoadingCopyWithImpl(
+      _$Loading<T> _value, $Res Function(_$Loading<T>) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Loading<T> implements Loading<T> {
-  const _$Loading();
+class _$Loading<T> extends Loading<T> {
+  const _$Loading() : super._();
 
   @override
   String toString() {
@@ -215,7 +227,8 @@ class _$Loading<T> implements Loading<T> {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is Loading<T>);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Loading<T>);
   }
 
   @override
@@ -230,6 +243,17 @@ class _$Loading<T> implements Loading<T> {
     required TResult Function(Object error, StackTrace? stackTrace) error,
   }) {
     return loading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? idle,
+    TResult? Function()? loading,
+    TResult? Function(T? value)? success,
+    TResult? Function(Object error, StackTrace? stackTrace)? error,
+  }) {
+    return loading?.call();
   }
 
   @override
@@ -260,6 +284,17 @@ class _$Loading<T> implements Loading<T> {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Idle<T> value)? idle,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+  }) {
+    return loading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Idle<T> value)? idle,
     TResult Function(Loading<T> value)? loading,
@@ -274,32 +309,35 @@ class _$Loading<T> implements Loading<T> {
   }
 }
 
-abstract class Loading<T> implements RequestState<T> {
+abstract class Loading<T> extends RequestState<T> {
   const factory Loading() = _$Loading<T>;
+  const Loading._() : super._();
 }
 
 /// @nodoc
-abstract class $SuccessCopyWith<T, $Res> {
-  factory $SuccessCopyWith(Success<T> value, $Res Function(Success<T>) then) =
-      _$SuccessCopyWithImpl<T, $Res>;
+abstract class _$$SuccessCopyWith<T, $Res> {
+  factory _$$SuccessCopyWith(
+          _$Success<T> value, $Res Function(_$Success<T>) then) =
+      __$$SuccessCopyWithImpl<T, $Res>;
+  @useResult
   $Res call({T? value});
 }
 
 /// @nodoc
-class _$SuccessCopyWithImpl<T, $Res> extends _$RequestStateCopyWithImpl<T, $Res>
-    implements $SuccessCopyWith<T, $Res> {
-  _$SuccessCopyWithImpl(Success<T> _value, $Res Function(Success<T>) _then)
-      : super(_value, (v) => _then(v as Success<T>));
+class __$$SuccessCopyWithImpl<T, $Res>
+    extends _$RequestStateCopyWithImpl<T, $Res, _$Success<T>>
+    implements _$$SuccessCopyWith<T, $Res> {
+  __$$SuccessCopyWithImpl(
+      _$Success<T> _value, $Res Function(_$Success<T>) _then)
+      : super(_value, _then);
 
-  @override
-  Success<T> get _value => super._value as Success<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? value = freezed,
   }) {
-    return _then(Success<T>(
-      value == freezed
+    return _then(_$Success<T>(
+      freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as T?,
@@ -309,8 +347,8 @@ class _$SuccessCopyWithImpl<T, $Res> extends _$RequestStateCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$Success<T> implements Success<T> {
-  const _$Success(this.value);
+class _$Success<T> extends Success<T> {
+  const _$Success(this.value) : super._();
 
   @override
   final T? value;
@@ -323,19 +361,20 @@ class _$Success<T> implements Success<T> {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Success<T> &&
-            (identical(other.value, value) ||
-                const DeepCollectionEquality().equals(other.value, value)));
+        (other.runtimeType == runtimeType &&
+            other is _$Success<T> &&
+            const DeepCollectionEquality().equals(other.value, value));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(value);
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(value));
 
   @JsonKey(ignore: true)
   @override
-  $SuccessCopyWith<T, Success<T>> get copyWith =>
-      _$SuccessCopyWithImpl<T, Success<T>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SuccessCopyWith<T, _$Success<T>> get copyWith =>
+      __$$SuccessCopyWithImpl<T, _$Success<T>>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -346,6 +385,17 @@ class _$Success<T> implements Success<T> {
     required TResult Function(Object error, StackTrace? stackTrace) error,
   }) {
     return success(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? idle,
+    TResult? Function()? loading,
+    TResult? Function(T? value)? success,
+    TResult? Function(Object error, StackTrace? stackTrace)? error,
+  }) {
+    return success?.call(value);
   }
 
   @override
@@ -376,6 +426,17 @@ class _$Success<T> implements Success<T> {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Idle<T> value)? idle,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+  }) {
+    return success?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Idle<T> value)? idle,
     TResult Function(Loading<T> value)? loading,
@@ -390,42 +451,40 @@ class _$Success<T> implements Success<T> {
   }
 }
 
-abstract class Success<T> implements RequestState<T> {
-  const factory Success(T? value) = _$Success<T>;
+abstract class Success<T> extends RequestState<T> {
+  const factory Success(final T? value) = _$Success<T>;
+  const Success._() : super._();
 
-  T? get value => throw _privateConstructorUsedError;
+  T? get value;
   @JsonKey(ignore: true)
-  $SuccessCopyWith<T, Success<T>> get copyWith =>
+  _$$SuccessCopyWith<T, _$Success<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ErrorCopyWith<T, $Res> {
-  factory $ErrorCopyWith(Error<T> value, $Res Function(Error<T>) then) =
-      _$ErrorCopyWithImpl<T, $Res>;
+abstract class _$$ErrorCopyWith<T, $Res> {
+  factory _$$ErrorCopyWith(_$Error<T> value, $Res Function(_$Error<T>) then) =
+      __$$ErrorCopyWithImpl<T, $Res>;
+  @useResult
   $Res call({Object error, StackTrace? stackTrace});
 }
 
 /// @nodoc
-class _$ErrorCopyWithImpl<T, $Res> extends _$RequestStateCopyWithImpl<T, $Res>
-    implements $ErrorCopyWith<T, $Res> {
-  _$ErrorCopyWithImpl(Error<T> _value, $Res Function(Error<T>) _then)
-      : super(_value, (v) => _then(v as Error<T>));
+class __$$ErrorCopyWithImpl<T, $Res>
+    extends _$RequestStateCopyWithImpl<T, $Res, _$Error<T>>
+    implements _$$ErrorCopyWith<T, $Res> {
+  __$$ErrorCopyWithImpl(_$Error<T> _value, $Res Function(_$Error<T>) _then)
+      : super(_value, _then);
 
-  @override
-  Error<T> get _value => super._value as Error<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? error = freezed,
+    Object? error = null,
     Object? stackTrace = freezed,
   }) {
-    return _then(Error<T>(
-      error == freezed
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as Object,
-      stackTrace == freezed
+    return _then(_$Error<T>(
+      null == error ? _value.error : error,
+      freezed == stackTrace
           ? _value.stackTrace
           : stackTrace // ignore: cast_nullable_to_non_nullable
               as StackTrace?,
@@ -435,8 +494,8 @@ class _$ErrorCopyWithImpl<T, $Res> extends _$RequestStateCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$Error<T> implements Error<T> {
-  const _$Error(this.error, [this.stackTrace]);
+class _$Error<T> extends Error<T> {
+  const _$Error(this.error, [this.stackTrace]) : super._();
 
   @override
   final Object error;
@@ -451,24 +510,22 @@ class _$Error<T> implements Error<T> {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is Error<T> &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$Error<T> &&
+            const DeepCollectionEquality().equals(other.error, error) &&
             (identical(other.stackTrace, stackTrace) ||
-                const DeepCollectionEquality()
-                    .equals(other.stackTrace, stackTrace)));
+                other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(error) ^
-      const DeepCollectionEquality().hash(stackTrace);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
-  $ErrorCopyWith<T, Error<T>> get copyWith =>
-      _$ErrorCopyWithImpl<T, Error<T>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorCopyWith<T, _$Error<T>> get copyWith =>
+      __$$ErrorCopyWithImpl<T, _$Error<T>>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -479,6 +536,17 @@ class _$Error<T> implements Error<T> {
     required TResult Function(Object error, StackTrace? stackTrace) error,
   }) {
     return error(this.error, stackTrace);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? idle,
+    TResult? Function()? loading,
+    TResult? Function(T? value)? success,
+    TResult? Function(Object error, StackTrace? stackTrace)? error,
+  }) {
+    return error?.call(this.error, stackTrace);
   }
 
   @override
@@ -509,6 +577,17 @@ class _$Error<T> implements Error<T> {
 
   @override
   @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Idle<T> value)? idle,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Idle<T> value)? idle,
     TResult Function(Loading<T> value)? loading,
@@ -523,12 +602,14 @@ class _$Error<T> implements Error<T> {
   }
 }
 
-abstract class Error<T> implements RequestState<T> {
-  const factory Error(Object error, [StackTrace? stackTrace]) = _$Error<T>;
+abstract class Error<T> extends RequestState<T> {
+  const factory Error(final Object error, [final StackTrace? stackTrace]) =
+      _$Error<T>;
+  const Error._() : super._();
 
-  Object get error => throw _privateConstructorUsedError;
-  StackTrace? get stackTrace => throw _privateConstructorUsedError;
+  Object get error;
+  StackTrace? get stackTrace;
   @JsonKey(ignore: true)
-  $ErrorCopyWith<T, Error<T>> get copyWith =>
+  _$$ErrorCopyWith<T, _$Error<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

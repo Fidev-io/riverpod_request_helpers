@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'async_value_state_notifier.dart';
 
@@ -10,25 +12,7 @@ part of 'async_value_state_notifier.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AsyncValueStateTearOff {
-  const _$AsyncValueStateTearOff();
-
-  _AsyncValueState<T> call<T>(
-      {T? value, bool isLoading = false, Object? error, StackTrace? st}) {
-    return _AsyncValueState<T>(
-      value: value,
-      isLoading: isLoading,
-      error: error,
-      st: st,
-    );
-  }
-}
-
-/// @nodoc
-const $AsyncValueState = _$AsyncValueStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$AsyncValueState<T> {
@@ -46,83 +30,85 @@ mixin _$AsyncValueState<T> {
 abstract class $AsyncValueStateCopyWith<T, $Res> {
   factory $AsyncValueStateCopyWith(
           AsyncValueState<T> value, $Res Function(AsyncValueState<T>) then) =
-      _$AsyncValueStateCopyWithImpl<T, $Res>;
+      _$AsyncValueStateCopyWithImpl<T, $Res, AsyncValueState<T>>;
+  @useResult
   $Res call({T? value, bool isLoading, Object? error, StackTrace? st});
 }
 
 /// @nodoc
-class _$AsyncValueStateCopyWithImpl<T, $Res>
+class _$AsyncValueStateCopyWithImpl<T, $Res, $Val extends AsyncValueState<T>>
     implements $AsyncValueStateCopyWith<T, $Res> {
   _$AsyncValueStateCopyWithImpl(this._value, this._then);
 
-  final AsyncValueState<T> _value;
   // ignore: unused_field
-  final $Res Function(AsyncValueState<T>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? value = freezed,
-    Object? isLoading = freezed,
+    Object? isLoading = null,
     Object? error = freezed,
     Object? st = freezed,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as T?,
-      isLoading: isLoading == freezed
+      isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
-      error: error == freezed ? _value.error : error,
-      st: st == freezed
+      error: freezed == error ? _value.error : error,
+      st: freezed == st
           ? _value.st
           : st // ignore: cast_nullable_to_non_nullable
               as StackTrace?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AsyncValueStateCopyWith<T, $Res>
+abstract class _$$_AsyncValueStateCopyWith<T, $Res>
     implements $AsyncValueStateCopyWith<T, $Res> {
-  factory _$AsyncValueStateCopyWith(
-          _AsyncValueState<T> value, $Res Function(_AsyncValueState<T>) then) =
-      __$AsyncValueStateCopyWithImpl<T, $Res>;
+  factory _$$_AsyncValueStateCopyWith(_$_AsyncValueState<T> value,
+          $Res Function(_$_AsyncValueState<T>) then) =
+      __$$_AsyncValueStateCopyWithImpl<T, $Res>;
   @override
+  @useResult
   $Res call({T? value, bool isLoading, Object? error, StackTrace? st});
 }
 
 /// @nodoc
-class __$AsyncValueStateCopyWithImpl<T, $Res>
-    extends _$AsyncValueStateCopyWithImpl<T, $Res>
-    implements _$AsyncValueStateCopyWith<T, $Res> {
-  __$AsyncValueStateCopyWithImpl(
-      _AsyncValueState<T> _value, $Res Function(_AsyncValueState<T>) _then)
-      : super(_value, (v) => _then(v as _AsyncValueState<T>));
+class __$$_AsyncValueStateCopyWithImpl<T, $Res>
+    extends _$AsyncValueStateCopyWithImpl<T, $Res, _$_AsyncValueState<T>>
+    implements _$$_AsyncValueStateCopyWith<T, $Res> {
+  __$$_AsyncValueStateCopyWithImpl(
+      _$_AsyncValueState<T> _value, $Res Function(_$_AsyncValueState<T>) _then)
+      : super(_value, _then);
 
-  @override
-  _AsyncValueState<T> get _value => super._value as _AsyncValueState<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? value = freezed,
-    Object? isLoading = freezed,
+    Object? isLoading = null,
     Object? error = freezed,
     Object? st = freezed,
   }) {
-    return _then(_AsyncValueState<T>(
-      value: value == freezed
+    return _then(_$_AsyncValueState<T>(
+      value: freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as T?,
-      isLoading: isLoading == freezed
+      isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
-      error: error == freezed ? _value.error : error,
-      st: st == freezed
+      error: freezed == error ? _value.error : error,
+      st: freezed == st
           ? _value.st
           : st // ignore: cast_nullable_to_non_nullable
               as StackTrace?,
@@ -138,8 +124,8 @@ class _$_AsyncValueState<T> implements _AsyncValueState<T> {
 
   @override
   final T? value;
-  @JsonKey(defaultValue: false)
   @override
+  @JsonKey()
   final bool isLoading;
   @override
   final Object? error;
@@ -154,49 +140,48 @@ class _$_AsyncValueState<T> implements _AsyncValueState<T> {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _AsyncValueState<T> &&
-            (identical(other.value, value) ||
-                const DeepCollectionEquality().equals(other.value, value)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_AsyncValueState<T> &&
+            const DeepCollectionEquality().equals(other.value, value) &&
             (identical(other.isLoading, isLoading) ||
-                const DeepCollectionEquality()
-                    .equals(other.isLoading, isLoading)) &&
-            (identical(other.error, error) ||
-                const DeepCollectionEquality().equals(other.error, error)) &&
-            (identical(other.st, st) ||
-                const DeepCollectionEquality().equals(other.st, st)));
+                other.isLoading == isLoading) &&
+            const DeepCollectionEquality().equals(other.error, error) &&
+            (identical(other.st, st) || other.st == st));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(value) ^
-      const DeepCollectionEquality().hash(isLoading) ^
-      const DeepCollectionEquality().hash(error) ^
-      const DeepCollectionEquality().hash(st);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(value),
+      isLoading,
+      const DeepCollectionEquality().hash(error),
+      st);
 
   @JsonKey(ignore: true)
   @override
-  _$AsyncValueStateCopyWith<T, _AsyncValueState<T>> get copyWith =>
-      __$AsyncValueStateCopyWithImpl<T, _AsyncValueState<T>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_AsyncValueStateCopyWith<T, _$_AsyncValueState<T>> get copyWith =>
+      __$$_AsyncValueStateCopyWithImpl<T, _$_AsyncValueState<T>>(
+          this, _$identity);
 }
 
 abstract class _AsyncValueState<T> implements AsyncValueState<T> {
   const factory _AsyncValueState(
-      {T? value,
-      bool isLoading,
-      Object? error,
-      StackTrace? st}) = _$_AsyncValueState<T>;
+      {final T? value,
+      final bool isLoading,
+      final Object? error,
+      final StackTrace? st}) = _$_AsyncValueState<T>;
 
   @override
-  T? get value => throw _privateConstructorUsedError;
+  T? get value;
   @override
-  bool get isLoading => throw _privateConstructorUsedError;
+  bool get isLoading;
   @override
-  Object? get error => throw _privateConstructorUsedError;
+  Object? get error;
   @override
-  StackTrace? get st => throw _privateConstructorUsedError;
+  StackTrace? get st;
   @override
   @JsonKey(ignore: true)
-  _$AsyncValueStateCopyWith<T, _AsyncValueState<T>> get copyWith =>
+  _$$_AsyncValueStateCopyWith<T, _$_AsyncValueState<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

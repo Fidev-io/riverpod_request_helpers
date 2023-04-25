@@ -32,6 +32,8 @@ abstract class RequestStateNotifier<T> extends StateNotifier<RequestState<T>> {
 
 @freezed
 class RequestState<T> with _$RequestState<T> {
+  const RequestState._();
+
   const factory RequestState.idle() = Idle<T>;
 
   const factory RequestState.loading() = Loading<T>;
@@ -40,4 +42,12 @@ class RequestState<T> with _$RequestState<T> {
 
   const factory RequestState.error(Object error, [StackTrace? stackTrace]) =
       Error<T>;
+
+  bool get isIdle => this is Idle;
+
+  bool get isLoading => this is Loading;
+
+  bool get isSuccess => this is Success;
+
+  bool get isError => this is Error;
 }

@@ -1,3 +1,7 @@
+## 0.0.4
+* Update freezed and riverpod dependencies
+* Add getters to RequestState
+
 ## 0.0.3
 * Update freezed and riverpod dependencies
 * Update min sdk to 2.17.1
